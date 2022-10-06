@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.barra {
+    width: 10rem;
+    background-color: #b4adea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.elemento {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.seccion-principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfff7;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    .seccion-principal {
+        height: 90vh;
+    }
+
+    .barra {
+        height: 10vh;
+        width: 100%;
+        background-color: #b4adea;
+        flex-direction: row;
+    }
+}
